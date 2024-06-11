@@ -4,7 +4,10 @@
 }
 
 body {
-    background-color: var(--cor-de-fundo);
+  background-color: var(--cor-de-fundo);
+  font-family: var(--fonte-principal);
+  font-size: 16px;
+  font-weight: 400;
 }
 
 h1 {
@@ -60,10 +63,7 @@ h1 {
     background-clip: text;
     text-transform: uppercase;
   }
-  .lista-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    width: 60vw;
-  }
+   @import url("styles/header.css");
+  @import url("styles/banner.css");
+  @import url("styles/carrossel.css");
   
