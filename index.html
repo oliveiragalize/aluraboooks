@@ -27,13 +27,19 @@
 </html>
 <header class="cabeçalho">
     <div class="container">
-        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
-        <img src="img/Logo.svg" alt="Logo da AluraBooks" class="container__imagem">
-    </div>
-    <div class="container">
-        <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
-        <a href="#"><img src="img/Compras.svg" alt="Carrinho de compras" class="container__imagem"></a>
-        <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+      <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      <img src="img/Logo.svg" alt="Logo da AluraBooks" class="container__imagem">
+  </div>
+    <div class="card__botões">
+      <ul class="botões">
+        <li class="botões__item">
+          <img src="img/Favoritos.svg" alt="Favoritar livro" />
+        </li>
+        <li class="botões__item">
+          <img src="img/Compras.svg" alt="Adicionar no carrinho de compras" />
+        </li>
+      </ul>
+      <a href="#" class="botões__ancora">Saiba mais</a>
     </div>
 </header>
 <div class="container">
@@ -61,12 +67,16 @@
       <a href="#" class="lista-menu__link">Design & UX</a>
     </li>
   </ul>
-  <section class="banner">
-    <h2 class="banner__titulo">Já sabe por onde começar?</h2>
-    <p class="banner__texto">
-      Encontre em nossa estante o que precisa para seu desenvolvimento!
-    </p>
-    <input
+  <div class="card__descrição">
+    <div class="descrição">
+      <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+      <h2 class="descrição__titulo-livro">Angular 11 e Firebase</h2>
+      <p class="descrição__texto">
+        Construindo uma aplicação integrada com a plataforma do Google.
+      </p>
+    </div>
+    <img src="img/Angular.svg" class="descrição__imagem" />
+  </div>
       type="search"
       class="banner__pesquisa"
       placeholder="Qual será sua próxima leitura?"
@@ -104,6 +114,11 @@
 <div class="swiper-wrapper">
   <!-- Slides -->
   <div class="swiper-slide">
+    <hr />
+
+<footer class="rodapé">
+  <h2 class="rodapé__titulo">Grupo Alura</h2>
+</footer>
     <img
       src="img/Apachekafka.svg"
       alt="Livro sobre apache kafka e spring boot da alura books"
@@ -111,16 +126,7 @@
   </div>
   <div class="swiper-slide">
     <img
-      src="img/Liderança.svg"</script>
-        const swiper = new Swiper(".swiper", {
-          spaceBetween: 10,
-          slidesPerView: 3,
-          pagination: {
-            el: ".swiper-pagination",
-            type: "bullets",
-          },
-        });
-      </script>
+      src="img/Liderança.svg"
       alt="Livro sobre liderança em design design da alura books"
     />
   </div>
@@ -145,8 +151,11 @@
    const swiper = new Swiper(".swiper", {
     spaceBetween: 10,
     slidesPerView: 3,
-  });
-  ({  // Optional parameters
+  })
+
+  (
+    {
+     // Optional parameters
     direction: "vertical",
     loop: true,
 
@@ -156,14 +165,6 @@
     },
 
     // Navigation arrows
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-
-    // And if we need scrollbar
-    scrollbar: {
-      el: ".swiper-scrollbar",
-    },
-  });
-  
+    navigation:
+   }
+  )
