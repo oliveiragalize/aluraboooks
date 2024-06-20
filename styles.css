@@ -70,4 +70,38 @@ h1
   @import url("styles/topicos.css");
   @import url("styles/contato.css");
   @import url("styles/rodapé.css");
+  :root {
+    --cor-de-fundo: #ebecee;
+    --branco: #ffffff;
+    --laranja: #eb9b00;
+    --azul-degrade: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+    --fonte-principal: "Poppins";
+    --azul: #002f52;
+    --fonte-secundario: "Josefin Sans";
+    --preto: #000000;
+    --cinza: #474646;
+    --cinza-claro: #858585;
+  }
+  @media screen and (min-width: 1024px) {
+    /* Código omitido */
   
+    .lista-rodapé__link {
+      color: var(--cinza);
+      text-decoration: none;
+      margin-left: 0.6em;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    /* Código omitido */
+  
+    .rodapé__titulo {
+      font-size: 24px;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    /* Código omitido */
+  
+    .lista-rodapé {
+      display: block;
+    }
+  }
